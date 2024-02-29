@@ -15,10 +15,8 @@ process prefetch_data{
     input:
     val sra_number
 
-
-
     """
-    prefetch -p  -O ${params.prefetch_out_dir}/${sra_number}.sra ${sra_number}.sra
+    prefetch -p  -O ${params.prefetch_out_dir} ${sra_number}.sra
     
     """
 }
